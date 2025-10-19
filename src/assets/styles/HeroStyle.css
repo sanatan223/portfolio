@@ -1,0 +1,123 @@
+/* -------------------------------------- */
+/* 3. Hero Section */
+/* -------------------------------------- */
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #030712;
+}
+
+.hero-content {
+    max-width: 56rem; /* max-w-4xl */
+    margin: auto;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: #818cf8;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    animation: fadeInDown 0.8s ease-out; /* Uses keyframe below */
+}
+
+.hero-title {
+    font-size: 4.5rem; /* text-7xl */
+    font-weight: 900; /* black */
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    line-height: 1; /* leading-tight */
+    letter-spacing: -0.025em; /* tracking-tighter */
+    animation: fadeInRight 0.8s ease-out;
+}
+
+.gradient-text {
+    background-image: linear-gradient(to right, #818cf8, #9333ea, #9333ea, #818cf8); /* from-indigo-400 to-purple-500 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% 100%;
+    background-position: 0% 0%;
+    transition: background-position 0.5s ease;
+}
+
+.gradient-text:hover {
+    background-position: -100% 0%; 
+}
+
+@media (min-width: 640px) {
+    .hero-title {
+        font-size: 5rem; /* sm:text-8xl */
+    }
+}
+
+.hero-description {
+    font-size: 1.875rem; /* text-3xl */
+    color: #d1d5db; /* gray-300 */
+    font-weight: 300; /* light */
+    margin-bottom: 2rem;
+    animation: fadeInLeft 0.8s ease-out;
+}
+
+.cta-group {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.cta-button {
+    padding: 0.75rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button-primary {
+    color: white;
+    background-color: #4f46e5; /* indigo-600 */
+}
+
+.cta-button-primary:hover {
+    background-color: #4338ca; /* indigo-700 */
+    transform: scale(1.05);
+}
+
+.cta-button-secondary {
+    color: #818cf8;
+    border: 2px solid #818cf8;
+    background: transparent;
+}
+
+.cta-button-secondary:hover {
+    background-color: #1e3a8a; /* indigo-900 */
+    transform: scale(1.05);
+}
+
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes titleAnimation {
+    from {}
+}
