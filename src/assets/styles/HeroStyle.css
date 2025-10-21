@@ -1,17 +1,15 @@
-/* -------------------------------------- */
-/* 3. Hero Section */
-/* -------------------------------------- */
-
+ 
 .hero-section {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #030712;
+    transition: background-color 0.3s ease;
 }
 
 .hero-content {
-    max-width: 56rem; /* max-w-4xl */
+    max-width: 56rem; 
     margin: auto;
     text-align: center;
     padding: 0 1rem;
@@ -22,21 +20,21 @@
     color: #818cf8;
     font-weight: 500;
     margin-bottom: 1rem;
-    animation: fadeInDown 0.8s ease-out; /* Uses keyframe below */
+    animation: fadeInDown 0.8s ease-out; 
 }
 
 .hero-title {
-    font-size: 4.5rem; /* text-7xl */
-    font-weight: 900; /* black */
+    font-size: 4.5rem; 
+    font-weight: 900; 
     color: #ffffff;
     margin-bottom: 1.5rem;
-    line-height: 1; /* leading-tight */
-    letter-spacing: -0.025em; /* tracking-tighter */
+    line-height: 1; 
+    letter-spacing: -0.025em; 
     animation: fadeInRight 0.8s ease-out;
 }
 
 .gradient-text {
-    background-image: linear-gradient(to right, #818cf8, #9333ea, #9333ea, #818cf8); /* from-indigo-400 to-purple-500 */
+    background-image: linear-gradient(to right, #818cf8, #9333ea, #9333ea, #818cf8); 
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -51,14 +49,14 @@
 
 @media (min-width: 640px) {
     .hero-title {
-        font-size: 5rem; /* sm:text-8xl */
+        font-size: 5rem; 
     }
 }
 
 .hero-description {
-    font-size: 1.875rem; /* text-3xl */
-    color: #d1d5db; /* gray-300 */
-    font-weight: 300; /* light */
+    font-size: 1.875rem; 
+    color: #d1d5db; 
+    font-weight: 300; 
     margin-bottom: 2rem;
     animation: fadeInLeft 0.8s ease-out;
 }
@@ -81,11 +79,11 @@
 
 .cta-button-primary {
     color: white;
-    background-color: #4f46e5; /* indigo-600 */
+    background-color: #4f46e5; 
 }
 
 .cta-button-primary:hover {
-    background-color: #4338ca; /* indigo-700 */
+    background-color: #4338ca; 
     transform: scale(1.05);
 }
 
@@ -96,7 +94,7 @@
 }
 
 .cta-button-secondary:hover {
-    background-color: #1e3a8a; /* indigo-900 */
+    background-color: #1e3a8a; 
     transform: scale(1.05);
 }
 
