@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { HomeIcon, FolderIcon, UserIcon, MailIcon } from '../public/icons/icon';
+import React, { useEffect, useState } from 'react';
+import { HomeIcon, FolderIcon, UserIcon, MailIcon, MenuIcon } from '../public/icons/icon';
 import { scrollToSection } from './Autoscroll';
 import '../src/assets/styles/HeaderStyle.css';
 import { useTheme, ThemeProvider } from '../context/ThemeContext.jsx';
@@ -9,6 +9,7 @@ import { SunIcon, MoonIcon } from '../public/icons/SunMoonIcon.jsx';
 export const Header = () => {
   
   const { theme, toggleTheme } = useTheme();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     document.documentElement.classList.remove('dark', 'light');
@@ -21,6 +22,11 @@ export const Header = () => {
 
   const changeTheme = async () => {
     await toggleTheme();
+  }
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+    console.log("Menu toggled:", !menuOpen);
   }
 
   return (
@@ -60,14 +66,19 @@ export const Header = () => {
         </button>
 
         <h1 className="logo">
-          Sanatan.dev
+          Sanatan
         </h1>
-        <nav className="nav-menu">
+        <div className={`mobile-menu-icon`}>
+          <button className={`nav-link`} onClick={toggleMenu}>
+            <MenuIcon />
+          </button>
+        </div>
+        <nav className={`nav-menu ${ menuOpen ? 'menu-open' : 'menu-close'} nav-menu-${theme}`}>
           {['Home', 'Projects', 'About', 'Contact'].map((item) => (
             <div
               key={item}
               onClick={() => scrollToSection(item.toLowerCase())}
-              className="nav-link logo"
+              className={`nav-link logo ${ menuOpen ? 'menu-open' : 'menu-close' }`}
             >
               {item === 'Home' && <HomeIcon theme={theme} />}
               {item === 'Projects' && <FolderIcon theme={theme} />}
@@ -77,12 +88,6 @@ export const Header = () => {
             </div>
           ))}
         </nav>
-        {/* Mobile Menu Icon Placeholder */}
-        <div className="mobile-menu-icon">
-          <button className="nav-link">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
-          </button>
-        </div>
       </div>
     </header>
   )

@@ -5,7 +5,6 @@ import { useTheme } from '../context/ThemeContext';
 
 export const ProjectCard = ({ title, description, technologies, repoLink, live }) => {
   const { theme } = useTheme();
-  console.log(repoLink)
   return (
     <div className="project-card" style={{
       backgroundColor: `${Colors[theme]}.projectCardBackground`,

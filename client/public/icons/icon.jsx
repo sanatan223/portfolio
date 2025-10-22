@@ -3,18 +3,24 @@ import { useTheme } from "../../context/ThemeContext";
 export const HomeIcon = () => {
   const { theme } = useTheme();
   return (
-    <svg viewBox="0 0 16 16" width={35} height={35} fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <svg
+      viewBox="0 0 16 16"
+      width={35}
+      height={35}
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
         <path
           d="M1 6V15H6V11C6 9.89543 6.89543 9 8 9C9.10457 9 10 9.89543 10 11V15H15V6L8 0L1 6Z"
-          fill={`${theme === 'dark' ? '#ffffff' : '#000000'}`}
+          fill={`${theme === "dark" ? "#ffffff" : "#000000"}`}
         ></path>{" "}
       </g>
     </svg>
@@ -23,16 +29,25 @@ export const HomeIcon = () => {
 export const FolderIcon = () => {
   const { theme } = useTheme();
   return (
-    <svg viewBox="0 0 16 16" width={35} height={35} fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <svg
+      viewBox="0 0 16 16"
+      width={35}
+      height={35}
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
-        <path d="M0 1H6L9 4H16V14H0V1Z" fill={`${theme === 'dark' ? '#ffffff' : '#000000'}`}></path>{" "}
+        <path
+          d="M0 1H6L9 4H16V14H0V1Z"
+          fill={`${theme === "dark" ? "#ffffff" : "#000000"}`}
+        ></path>{" "}
       </g>
     </svg>
   );
@@ -43,18 +58,19 @@ export const MailIcon = () => {
   return (
     <svg
       viewBox="0 -3.5 32 32"
-      width={35} height={35}
+      width={35}
+      height={35}
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
       xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-      fill={`${theme === 'dark' ? '#ffffff' : '#000000'}`}
+      fill={`${theme === "dark" ? "#ffffff" : "#000000"}`}
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
@@ -63,9 +79,9 @@ export const MailIcon = () => {
         <g
           id="Page-1"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           fill="none"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           sketch:type="MSPage"
         >
           {" "}
@@ -73,7 +89,7 @@ export const MailIcon = () => {
             id="Icon-Set-Filled"
             sketch:type="MSLayerGroup"
             transform="translate(-414.000000, -261.000000)"
-            fill={`${theme === 'dark' ? '#ffffff' : '#000000'}`}
+            fill={`${theme === "dark" ? "#ffffff" : "#000000"}`}
           >
             {" "}
             <path
@@ -93,22 +109,28 @@ export const MailIcon = () => {
 export const UserIcon = () => {
   const { theme } = useTheme();
   return (
-    <svg viewBox="0 0 16 16" width={35} height={35} fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <svg
+      viewBox="0 0 16 16"
+      width={35}
+      height={35}
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
         <path
           d="M8 7C9.65685 7 11 5.65685 11 4C11 2.34315 9.65685 1 8 1C6.34315 1 5 2.34315 5 4C5 5.65685 6.34315 7 8 7Z"
-          fill={`${theme === 'dark' ? '#ffffff' : '#000000'}`}
+          fill={`${theme === "dark" ? "#ffffff" : "#000000"}`}
         ></path>{" "}
         <path
           d="M14 12C14 10.3431 12.6569 9 11 9H5C3.34315 9 2 10.3431 2 12V15H14V12Z"
-          fill={`${theme === 'dark' ? '#ffffff' : '#000000'}`}
+          fill={`${theme === "dark" ? "#ffffff" : "#000000"}`}
         ></path>{" "}
       </g>
     </svg>
@@ -120,17 +142,18 @@ export const GithubIcon = () => {
   return (
     <svg
       viewBox="0 0 20 20"
-      width={35} height={35}
+      width={35}
+      height={35}
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
       fill="#000000"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
@@ -139,15 +162,15 @@ export const GithubIcon = () => {
         <g
           id="Page-1"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           fill="none"
-          fill-rule="evenodd"
+          fillRule="evenodd"
         >
           {" "}
           <g
             id="Dribbble-Light-Preview"
             transform="translate(-140.000000, -7559.000000)"
-            fill={`${theme === 'dark' ? '#ffffff' : '#000000'}`}
+            fill={`${theme === "dark" ? "#ffffff" : "#000000"}`}
           >
             {" "}
             <g id="icons" transform="translate(56.000000, 160.000000)">
@@ -161,6 +184,41 @@ export const GithubIcon = () => {
             </g>{" "}
           </g>{" "}
         </g>{" "}
+      </g>
+    </svg>
+  );
+};
+
+export const MenuIcon = () => {
+  const { theme } = useTheme();
+  return (
+    <svg viewBox="0 0 24 24" width={35} height={35} fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path
+          d="M5 12H20"
+          stroke={`${theme === 'dark' ? '#ffffff' : '#000000'}`}
+          strokeWidth="2"
+          strokeLinecap="round"
+        ></path>{" "}
+        <path
+          d="M5 17H20"
+          stroke={`${theme === 'dark' ? '#ffffff' : '#000000'}`}
+          strokeWidth="2"
+          strokeLinecap="round"
+        ></path>{" "}
+        <path
+          d="M5 7H20"
+          stroke={`${theme === 'dark' ? '#ffffff' : '#000000'}`}
+          strokeWidth="2"
+          strokeLinecap="round"
+        ></path>{" "}
       </g>
     </svg>
   );
