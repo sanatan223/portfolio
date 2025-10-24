@@ -7,7 +7,7 @@ export const Colors = {
     "textSecondary": "#4B5563",
     "accentPrimary": "#4F46E5",
     "accentCTA": "#3730A3",
-    "accentGradient": "#6D28D9",
+    "accentGradient": "#8a61b1ff",
     "border": "#c8c8c8ff",
     "formInputBackground": "#E5E7EB",
     "techTagBackground": "#E0E7FF"

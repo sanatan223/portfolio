@@ -65,9 +65,6 @@ export const Header = () => {
           </div>
         </button>
 
-        <h1 className="logo">
-          Sanatan
-        </h1>
         <div className={`mobile-menu-icon`}>
           <button className={`nav-link`} onClick={toggleMenu}>
             <MenuIcon />

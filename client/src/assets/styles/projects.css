@@ -84,3 +84,13 @@
 .project-links a:hover {
     color: #a5b4fc;
 }
+
+.animation{
+    opacity: 0;
+}
+
+.animation.fade-in {
+    transform: translateX(-20px);
+    opacity: 1;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}

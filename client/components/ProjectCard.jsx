@@ -1,12 +1,20 @@
 import { FolderIcon, GithubIcon } from '../public/icons/icon';
 import { Colors } from '../constants/Colors';
 import { useTheme } from '../context/ThemeContext';
+import { useEffect } from 'react';
+import observe from '../animations/obsorveObject.js';
 
 
 export const ProjectCard = ({ title, description, technologies, repoLink, live }) => {
   const { theme } = useTheme();
+
+  useEffect(() => {
+    const animationObjects = document.querySelectorAll('.animation');
+    animationObjects.forEach((obj) => { observe(obj)});
+  })
+
   return (
-    <div className="project-card" style={{
+    <div className="project-card animation" style={{
       backgroundColor: `${Colors[theme]}.projectCardBackground`,
       border: `1px solid ${Colors[theme].border}`
     }}>

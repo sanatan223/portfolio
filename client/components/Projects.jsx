@@ -3,13 +3,20 @@ import { ProjectCard } from "./ProjectCard";
 import { Colors } from "../constants/Colors";
 import { useTheme } from "../context/ThemeContext";
 import '../src/assets/styles/projects.css';
+import { useEffect } from "react";
+import observe from '../animations/obsorveObject.js';
 
 export const Projects = () => {
   const { theme } = useTheme();
 
+  useEffect(() => {
+    const animationObjects = document.querySelectorAll('.animation');
+    animationObjects.forEach((obj) => { observe(obj)});
+  })
+
   const projectsData = [
-    { title: 'Saathi APP',
-      description: 'An Mobile Application built with React-Native, TypeScript', 
+    { title: 'Saathi App',
+      description: 'An Mobile Application built with React-Native, TypeScript and SQL database.', 
       technologies: ['React-Native', 'TypeScript'], 
       repoLink: 'https://github.com/sanatan223/mitti.git', 
       live:'https://1drv.ms/u/c/bb242df4398a34e0/EYycl52GU3VKpWKTd7CUhJUBIxIm75dOYILG199iEtHGjQ' 
@@ -34,7 +41,7 @@ export const Projects = () => {
           ))}
         </div>
         <div className="max-width-limit" style={{marginTop: '3rem', textAlign: 'center' }}>
-           <a href="#" className="nav-link" style={{
+           <a href="#" className="nav-link animation" style={{
               display: 'inline-block',
               borderBottom: `1px solid ${Colors[theme].accentPrimary}`,
               paddingBottom: '0.25rem',
