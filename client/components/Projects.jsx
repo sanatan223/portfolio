@@ -5,7 +5,7 @@ import { useTheme } from "../context/ThemeContext";
 import '../src/styles/projects.css';
 import { useEffect } from "react";
 import observe from '../animations/obsorveObject.js';
-import '../animations/animations.css';
+import '../src/styles/animations.css';
 
 export const Projects = () => {
   const { theme } = useTheme();

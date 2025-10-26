@@ -4,7 +4,7 @@ import { Colors } from "../constants/Colors";
 import { useTheme } from "../context/ThemeContext";
 import { useEffect } from "react";
 import observe from '../animations/obsorveObject.js';
-import '../animations/animations.css';
+import '../src/styles/animations.css';
 
 export const Contact = () => {
     const { theme } = useTheme();
