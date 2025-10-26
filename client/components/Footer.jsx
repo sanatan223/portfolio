@@ -1,5 +1,5 @@
-import { GithubIcon, MailIcon } from '../public/icons/icon';
-import '../src/assets/styles/Footer.css';
+import { GithubIcon, MailIcon } from '../src/assets/icons/icon';
+import '../src/styles/Footer.css';
 import { Colors } from '../constants/Colors';
 import { useTheme } from '../context/ThemeContext';
 import { useEffect } from "react";
@@ -20,7 +20,7 @@ export const Footer = () => {
       borderTop: `1px solid ${Colors[theme].border}`}}>
       <div className="section-inner">
         <div className="social-links animation">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/sanatan223" target="_blank" rel="noopener noreferrer">
             <GithubIcon theme={theme} />
           </a>
           <a href="mailto:ssanatansethi5@gmail.com">

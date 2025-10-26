@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { scrollToSection } from './Autoscroll';
-import '../src/assets/styles/HeroStyle.css';
+import '../src/styles/HeroStyle.css';
 import { useTheme } from '../context/ThemeContext.jsx';
 import { Colors } from '../constants/Colors.ts';
 

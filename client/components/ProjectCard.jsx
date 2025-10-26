@@ -1,4 +1,4 @@
-import { FolderIcon, GithubIcon } from '../public/icons/icon';
+import { FolderIcon, GithubIcon } from '../src/assets/icons/icon';
 import { Colors } from '../constants/Colors';
 import { useTheme } from '../context/ThemeContext';
 import { useEffect } from 'react';

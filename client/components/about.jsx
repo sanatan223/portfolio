@@ -1,10 +1,11 @@
 import { SectionTitle } from "./SectionTitle";
 import { Colors } from "../constants/Colors";
 import { useTheme } from "../context/ThemeContext";
-import '../src/assets/styles/About.css';
+import '../src/styles/About.css';
 import { useEffect } from "react";
 import observe from '../animations/obsorveObject.js';
 import '../animations/animations.css';
+import profileImage from '../src/assets/images/profile-image.jpg';
 
 const SkillTag = ({ children }) => (
   <span className="skill-tag animation" style={{
@@ -28,6 +29,10 @@ export const About = () => {
         animationObjects.forEach((obj) => { observe(obj)});
     })
 
+    const dynamicStyle = {
+        "--about-bg-color": theme === 'dark' ? 'rgba(225, 225, 225, 0.3)' : 'rgba(0, 0, 0, 0.3)',
+    };
+
     return (
         <section id="about" className="section-padding section-darker" style={{
             backgroundColor: Colors[theme].background,
@@ -35,13 +40,16 @@ export const About = () => {
             <div className="section-inner section-header">
                 <SectionTitle>About Me</SectionTitle>
                 <div className="about-content max-width-limit">
-                    <div className="about-text animation" style={{ color: Colors[theme].textSecondary }}>
-                        <p>
-                            I am a <strong>passionate Front-End Developer</strong> with 5 years of experience specializing in the React ecosystem. My focus is on building highly responsive, accessible, and performant web applications. I thrive in environments where continuous learning and collaboration are key.
-                        </p>
-                        <p>
-                            I believe good code should be clean and maintainable. Outside of coding, I enjoy contributing to open-source projects and exploring new UI/UX trends to keep my work fresh and user-centric. Let's create something amazing together!
-                        </p>
+                    <div className="about-intro">
+                        <img src={profileImage} alt="Profile" style={dynamicStyle} className="about-image animation" />
+                        <div className="about-text animation" style={{ color: Colors[theme].textSecondary }}>
+                            <p>
+                                I am <strong>Sanatan Sethi</strong>, a programmer who welcomes every bug that knocks on the door.
+                            </p>
+                            <p>
+                                I am mostly an introvert but, when it comes to making things interesting no one can compete with me.
+                            </p>
+                        </div>
                     </div>
                     <div className="about-skills animation" style={{
                         backgroundColor: Colors[theme].sectionBackground,

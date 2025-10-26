@@ -1,5 +1,5 @@
 import { SectionTitle } from "./SectionTitle";
-import '../src/assets/styles/Contact.css';
+import '../src/styles/Contact.css';
 import { Colors } from "../constants/Colors";
 import { useTheme } from "../context/ThemeContext";
 import { useEffect } from "react";

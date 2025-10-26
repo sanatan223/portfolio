@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { HomeIcon, FolderIcon, UserIcon, MailIcon, MenuIcon } from '../public/icons/icon';
+import { HomeIcon, FolderIcon, UserIcon, MailIcon, MenuIcon } from '../src/assets/icons/icon';
 import { scrollToSection } from './Autoscroll';
-import '../src/assets/styles/HeaderStyle.css';
+import '../src/styles/HeaderStyle.css';
 import { useTheme, ThemeProvider } from '../context/ThemeContext.jsx';
 import { Colors } from '../constants/Colors.ts';
-import { SunIcon, MoonIcon } from '../public/icons/SunMoonIcon.jsx';
+import { SunIcon, MoonIcon } from '../src/assets/icons/SunMoonIcon.jsx';
 
 export const Header = () => {
   

@@ -2,9 +2,10 @@ import { SectionTitle } from "./SectionTitle";
 import { ProjectCard } from "./ProjectCard";
 import { Colors } from "../constants/Colors";
 import { useTheme } from "../context/ThemeContext";
-import '../src/assets/styles/projects.css';
+import '../src/styles/projects.css';
 import { useEffect } from "react";
 import observe from '../animations/obsorveObject.js';
+import '../animations/animations.css';
 
 export const Projects = () => {
   const { theme } = useTheme();

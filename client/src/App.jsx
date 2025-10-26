@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './assets/styles/App.css'; 
+import './styles/App.css'; 
 import { Header } from '../components/header.jsx';
 import { Hero } from '../components/HeroSection.jsx';
 import { Projects } from '../components/Projects.jsx';
