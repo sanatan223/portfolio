@@ -22,12 +22,18 @@ export const Projects = () => {
       repoLink: 'https://github.com/sanatan223/mitti.git', 
       live:'https://1drv.ms/u/c/bb242df4398a34e0/EYycl52GU3VKpWKTd7CUhJUBIxIm75dOYILG199iEtHGjQ' 
     },
-    { title: 'Task Manager App', 
-      description: 'A simple, intuitive task management system with real-time updates.', 
-      technologies: ['React', 'Firebase', 'CSS'], 
-      repoLink: 'https://github.com/sanatan223/mitti.git'
+    { title: 'Global chat Apk', 
+      description: 'A simple yet fun playground about anything, with everyone.', 
+      technologies: ['React', 'Postegres'], 
+      repoLink: 'git@github.com:sanatan223/mini-messageBoard.git',
+      live: 'https://mini-messageboard-g5zq.onrender.com/'
     },
-    { title: 'Data Visualization Dashboard', description: 'Interactive dashboard using D3.js to display complex data sets.', technologies: ['React', 'D3.js', 'TypeScript'], repoLink: 'https://github.com/sanatan223/mitti.git' }
+    { title: 'Mini Library',
+      description: 'An personal Vault to Manage, Store and Write scripts online.',
+      technologies: ['React', 'Postgres', 'JavaScript'],
+      repoLink: 'https://github.com/sanatan223/my-library.git',
+      live: 'https://sanatan223.github.io/my-library/' 
+    },
   ];
 
   return (
@@ -42,7 +48,7 @@ export const Projects = () => {
           ))}
         </div>
         <div className="max-width-limit" style={{marginTop: '3rem', textAlign: 'center' }}>
-           <a href="#" className="nav-link animation" style={{
+           <a href="https://github.com/sanatan223/" className="nav-link animation" style={{
               display: 'inline-block',
               borderBottom: `1px solid ${Colors[theme].accentPrimary}`,
               paddingBottom: '0.25rem',

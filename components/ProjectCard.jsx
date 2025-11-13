@@ -37,7 +37,9 @@ export const ProjectCard = ({ title, description, technologies, repoLink, live }
         ))}
       </div>
       <div className="project-links">
-        <a href={`${repoLink}`} target="_blank" rel="noopener noreferrer">
+        <a href={`${repoLink}`} style={{
+          gap: '10px',
+        }} target="_blank" rel="noopener noreferrer">
           <GithubIcon theme={theme} />
           <span className="ml-1 text-sm">Code</span>
         </a>
