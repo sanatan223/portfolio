@@ -20,7 +20,8 @@ export const Contact = () => {
       name: "Instagram",
       icon: <InstagramIcon />,
       gradient: "linear-gradient(to bottom right, #9333ea, #db2777, #f97316)",
-      bgGradient: "linear-gradient(to bottom right, #faf5ff, #fce7f3)",
+      bgGradientdark: "linear-gradient(45deg, #f09433, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888)",
+      bgGradientlight: "linear-gradient(135deg, #4c1d95, #833ab4, #fd1d1d)",
       description:
         "Follow for Upcoming content, and my life outside the software world",
       handle: "@sanatan1779",
@@ -30,7 +31,8 @@ export const Contact = () => {
       name: "GitHub",
       icon: <GithubIcon />,
       gradient: "linear-gradient(to bottom right, #374151, #111827)",
-      bgGradient: "linear-gradient(to bottom right, #f9fafb, #f1f5f9)",
+      bgGradientdark: "linear-gradient(135deg, #f6f8fa, #e1e4e8, #d1d5da)",
+      bgGradientlight: "linear-gradient(135deg, #0d1117, #161b22, #30363d)",
       description:
         "Explore my open-source projects, code repositories, and contributions",
       handle: "github.com/sanatan223",
@@ -40,7 +42,8 @@ export const Contact = () => {
       name: "LinkedIn",
       icon: <LinkedinIcon />,
       gradient: "linear-gradient(to bottom right, #2563eb, #1e40af)",
-      bgGradient: "linear-gradient(to bottom right, #eff6ff, #ecfeff)",
+      bgGradientdark: "linear-gradient(135deg, #0077b5, #00a0dc, #ffffff)",
+      bgGradientlight: "linear-gradient(135deg, #004182, #001f3f)",
       description:
         "Connect professionally, view experience, and network together",
       handle: "sanatan-sethi",
@@ -50,7 +53,8 @@ export const Contact = () => {
       name: "Email",
       icon: <GmailIcon />,
       gradient: "linear-gradient(to right, #ef4444, #eab308, #22c55e)",
-      bgGradient: "linear-gradient(to bottom right, #fef2f2, #fef9c3)",
+      bgGradientdark: "linear-gradient(135deg, #ffffff, #f2f2f2, #e0e0e0)",
+      bgGradientlight: "linear-gradient(135deg, #2c3e50, #000000)",
       description:
         "Send me a message for inquiries, collaborations, or just to say hi",
       handle: "ssanatansethi5@gmail.com",
@@ -93,7 +97,7 @@ export const Contact = () => {
                 <div
                   className="pillar-card animation"
                   style={{
-                    background: platform.bgGradient,
+                    background: platform[`bgGradient${theme === 'dark' ? 'light' : 'dark'}`],
                     transform: isHovered
                       ? "scale(1.05) translateY(-8px)"
                       : "scale(1)",
@@ -114,7 +118,6 @@ export const Contact = () => {
                     <div
                       className="icon-container"
                       style={{
-                        background: platform.gradient,
                         transform: isHovered
                           ? "rotate(360deg) scale(1.1)"
                           : "rotate(0deg) scale(1)",
@@ -123,13 +126,11 @@ export const Contact = () => {
                       {platform.icon}
                     </div>
 
-                    <h3 className="platform-name">{platform.name}</h3>
+                    <h3 className="platform-name" style={{color: Colors[theme].textPrimary}}>{platform.name}</h3>
                     <p
                       className="platform-handle"
                       style={{
-                        background: platform.gradient,
-                        WebkitBackgroundClip: "text",
-                        WebkitTextFillColor: "transparent",
+                        color: Colors[theme].textPrimary,
                       }}
                     >
                       {platform.handle}
@@ -137,7 +138,7 @@ export const Contact = () => {
                     <p
                       className="platform-description"
                       style={{
-                        color: isHovered ? "#1f2937" : "#4b5563",
+                        color: isHovered ? Colors[theme].textSecondary : Colors[theme].textPrimary,
                       }}
                     >
                       {platform.description}
