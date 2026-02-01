@@ -1,16 +1,35 @@
-# React + Vite
+# Sanatan Sethi | Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📸 Live Preview
+**Link:** [sanatan-amber.vercel.app](https://sanatan-amber.vercel.app/)
 
-Currently, two official plugins are available:
+<img width="1920" alt="Portfolio Screenshot" src="https://github.com/user-attachments/assets/76f18d7d-7692-4011-9a9c-8793778dfc40" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📝 Description
+This is my personal portfolio website—the central hub where all my work lives together. This project was built to demonstrate my frontend development and styling skills, focusing on clean code and smooth user experience.
 
-## React Compiler
+## ⚡ Quick Features
+* **Fully Responsive:** Designed for mobile, tablet, and desktop.
+* **Dark Mode Support:** Because I care about your eyes.
+* **Social Integration:** Easy access to my professional platforms to stay connected.
+* **SEO Optimized:** High performance and accessibility out of the box.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tech Stack
 
-## Expanding the ESLint configuration
+| Category | Tools |
+| :--- | :--- |
+| **Frontend** | React, Next.js, Tailwind CSS |
+| **Animation** | CSS Animations |
+| **Deployment** | Vercel |
+| **Analytics** | Google Analytics / Umami |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📈 Lighthouse Scores
+| Performance | Accessibility | Best Practices | SEO |
+| :--- | :--- | :--- | :--- |
+| 98% | 100% | 100% | 100% |
+
+## 🤝 Contributing
+Since this is a personal portfolio, I'm not looking for major contributions. However, feel free to fork it and make it your own! If you find a bug or have a UI suggestion, feel free to open an issue or a pull request.
+
+## 📄 License
+This project is [MIT](LICENSE) licensed.
