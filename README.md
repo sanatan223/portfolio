@@ -1,7 +1,7 @@
 # Sanatan Sethi | Personal Portfolio
 
 ## 📸 Live Preview
-**Link:** [sanatan-amber.vercel.app](https://sanatan-amber.vercel.app/)
+**Link:** [sanatan-amber.vercel.app](https://sanatan-sethi.vercel.app/)
 
 <img width="1920" alt="Portfolio Screenshot" src="https://github.com/user-attachments/assets/76f18d7d-7692-4011-9a9c-8793778dfc40" />
 
